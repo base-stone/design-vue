@@ -1,0 +1,75 @@
+{
+  "name": "@base-stone/vue",
+  "license": "MIT",
+  "version": "1.0.8",
+  "author": {
+    "name": "base-stone",
+    "email": "leafront@126.com"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/base-stone/design-vue.git"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "type": "module",
+  "main": "./dist/design-vue.es.prod.js",
+  "module": "./dist/design-vue.es.prod.js",
+  "exports": {
+    ".": {
+      "import": "./dist/design-vue.es.prod.js",
+      "types": "./dist/design-vue.es.prod.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "homepage": "https://github.com/base-stone/design-vue",
+  "scripts": {
+    "build:prod": "vue-tsc && vite build && node scripts/sassPack.js",
+    "build:publish": "npm run build:prod && npm publish",
+    "build:css": "sudo node sassPack.js",
+    "eslint": "eslint --fix ./src --ext vue,ts",
+    "prettier": "prettier --write \"./src/**/*.{vue,ts,scss}\"",
+    "stylelint": "stylelint --fix \"./src/**/*.{scss,vue}\"",
+    "lint:css:js": "npm run eslint && npm run prettier && npm run stylelint"
+  },
+  "devDependencies": {
+    "@babel/types": "^7.23.5",
+    "@microsoft/api-extractor": "^7.38.3",
+    "@types/node": "^20.10.1",
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vue/compiler-sfc": "^3.3.9",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-vue": "^9.19.2",
+    "postcss": "^8.4.31",
+    "postcss-pxtorem": "^6.0.0",
+    "prettier": "^3.1.0",
+    "rollup-plugin-shell": "^1.0.9",
+    "sass": "^1.69.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recommended-scss": "^13.1.0",
+    "stylelint-config-standard": "^34.0.0",
+    "stylelint-config-standard-vue": "^1.0.0",
+    "stylelint-order": "^6.0.3",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-dts": "^3.6.4",
+    "vue": "^3.3.9",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.24"
+  },
+  "dependencies": {
+    "@base-stone/librarys": "^0.1.2",
+    "@base-stone/style": "^0.1.3"
+  }
+}
