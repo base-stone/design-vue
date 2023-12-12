@@ -9,8 +9,8 @@ dependencies:
     specifier: ^0.1.2
     version: 0.1.2
   '@base-stone/style':
-    specifier: ^0.1.3
-    version: 0.1.3
+    specifier: ^0.1.5
+    version: 0.1.5
 
 devDependencies:
   '@babel/types':
@@ -164,8 +164,8 @@ packages:
     resolution: {integrity: sha512-0WQ95JcNVlx9ldrh66YF21mc7M5vnLfBGLhYDkGoSPZZnQU0zR1x9SsGaGhK5n3oAOK+FzxHArX6gG+Wni9Cog==}
     dev: false
 
-  /@base-stone/style@0.1.3:
-    resolution: {integrity: sha512-YxSLOMsZN/9pWgjQ6DwSh3oICXCpu3DSWQAZWV68dB+MCz54TyeFtWtX6f+SNPDU7uHEoU8cQCnGHrtqPneOHg==}
+  /@base-stone/style@0.1.5:
+    resolution: {integrity: sha512-3qK6uB3A/W0V7ye1gWD+Akzt4bhxYKoXY/hp3yvKR0ioUwRBWs9gSE7urnq5I0TYrz6XKIvWJEO6vwW+8XrnMg==}
     dev: false
 
   /@csstools/css-parser-algorithms@2.3.2(@csstools/css-tokenizer@2.2.1):
