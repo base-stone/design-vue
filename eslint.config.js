@@ -1,11 +1,12 @@
-module.exports = {
+export default [{
+  files: ["src/**/*.ts", "src/**/*.vue"],
   root: true,
   env: { browser: true, es2020: true },
   extends: [
     'plugin:vue/vue3-recommended',
     'plugin:@typescript-eslint/recommended'
   ],
-  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  ignorePatterns: ['dist', 'eslint.config.js'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 13,
@@ -31,4 +32,4 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': 'off'
   }
-}
+}]
