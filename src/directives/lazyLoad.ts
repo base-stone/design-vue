@@ -5,16 +5,16 @@ const lazyLoad = {
   list: [] as HTMLDivElement[],
   init(el: HTMLDivElement) {
     this.list.push(el)
-    this.scrollLoad()
+    this.handleScrollLoad()
   },
   /**
    * 滚动加载图片显示替换默认图片
    */
-  scrollLoad() {
+  handleScrollLoad() {
     if (this.list.length) {
       this.list.forEach((el) => {
         if (el.dataset.LazyLoadImgState != 'success' && this.getClientRect(el)) {
-          this.loadImage(el)
+          this.handleScrollImage(el)
         }
       })
     }
@@ -36,43 +36,24 @@ const lazyLoad = {
    * @param {Object} el
    * @param {Number} index
    */
-  loadImage(el: HTMLElement) {
-    const pic = el.dataset.src
+  handleScrollImage(el: HTMLElement) {
+    const src = el.dataset.src
     el.dataset.LazyLoadImgState = 'start'
-    if (pic) {
-      const img = new Image()
-      img.referrerPolicy = 'no-referrer'
-      img.src = pic
-      img.addEventListener(
-        'load',
-        () => {
-          el.style.background = `url(${pic}) no-repeat center top / cover`
-          delete el.dataset.src
-          el.dataset.LazyLoadImgState = 'success'
-          el.classList.add('ui-lazy-fade')
-          this.list.forEach((item, index) => {
-            if (item == el) {
-              this.list.splice(index, 1)
-            }
-          })
-        },
-        false
-      )
-
-      img.addEventListener(
-        'error',
-        () => {
-          delete el.dataset.src
-          el.dataset.LazyLoadImgState = 'error'
-        },
-        false
-      )
-    } else {
-      delete el.dataset.src
+    if (!src) {
+      return false
     }
+    el.style.background = `url(${src}) no-repeat center top / cover`
+    delete el.dataset.src
+    el.dataset.LazyLoadImgState = 'success'
+    el.classList.add('ui-lazy-fade')
+    this.list.forEach((item, index) => {
+      if (item == el) {
+        this.list.splice(index, 1)
+      }
+    })
   },
   start() {
-    this.scrollFn = throttle(() => this.scrollLoad(), 500)
+    this.scrollFn = throttle(() => this.handleScrollLoad(), 500)
     window.addEventListener('scroll', this.scrollFn, getPassiveValue())
   },
   remove(): void {
