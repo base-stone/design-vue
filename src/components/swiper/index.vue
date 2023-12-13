@@ -7,9 +7,9 @@
       @touchmove="touchmove"
       @touchend="touchend"
     >
-      <slot name="banner" :list="bannerList"></slot>
+      <slot name="banner" :list="bannerList" />
     </div>
-    <slot name="dot"></slot>
+    <slot name="dot" />
   </div>
 </template>
 

@@ -2,10 +2,12 @@
   <div class="ui-mask" @touchmove="handleStopPopup($event)">
     <div class="ui-showModal plr32 bgfff">
       <div v-if="title" class="ui-showModal-title tc">
-        <h5 class="fs36 font-semiBold font-weight">{{ title }}</h5>
+        <h5 class="fs36 font-semiBold font-weight">
+          {{ title }}
+        </h5>
       </div>
       <div class="ui-showModal-cont tc">
-        <p class="fs28 lh44" v-html="content"></p>
+        <p class="fs28 lh44" v-html="content" />
       </div>
       <div class="ui-showModal-submit fs32 flex flex-h-between">
         <span v-if="cancelButton" class="tc" @click="cancelCallback">{{ cancelText }}</span>

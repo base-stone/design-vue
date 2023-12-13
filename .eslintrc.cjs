@@ -1,15 +1,9 @@
 module.exports = {
   root: true,
-  env: {
-    browser: true,
-    es2021: true,
-    node: true
-  },
+  env: { browser: true, es2020: true },
   extends: [
-    'plugin:prettier/recommended',
     'plugin:vue/vue3-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier'
+    'plugin:@typescript-eslint/recommended'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: 'vue-eslint-parser',
@@ -18,7 +12,7 @@ module.exports = {
     parser: '@typescript-eslint/parser',
     sourceType: 'module'
   },
-  plugins: ['vue', '@typescript-eslint', 'prettier'],
+  plugins: ['vue', '@typescript-eslint'],
   rules: {
     'no-useless-escape': 'off',
     'no-irregular-whitespace': 'off',
@@ -32,7 +26,6 @@ module.exports = {
     'vue/v-on-event-hyphenation': 'off',
     'vue/multi-word-component-names': 'off',
     'vue/attribute-hyphenation': 'off',
-    'prettier/prettier': 'error',
     'vue/require-explicit-emits': 'off',
     '@typescript-eslint/no-this-alias': 'off',
     '@typescript-eslint/no-var-requires': 'off',

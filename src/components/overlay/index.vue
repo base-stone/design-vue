@@ -4,7 +4,7 @@
       class="ui-mask"
       @touchmove="handleStopPopup($event)"
       @click="updateMaskOverlay($event, false)"
-    ></div>
+    />
     <div
       class="ui-overlay-container"
       :class="{
@@ -14,7 +14,7 @@
         'ui-overlay-container-center-active': show && fadeIn == 'center'
       }"
     >
-      <slot></slot>
+      <slot />
     </div>
   </div>
 </template>
