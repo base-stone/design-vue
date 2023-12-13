@@ -32,7 +32,7 @@
     "build:prod": "vue-tsc && vite build && node scripts/sassPack.js",
     "build:publish": "npm run build:prod && npm publish",
     "build:css": "sudo node scripts/sassPack.js",
-    "eslint": "eslint --fix",
+    "eslint": "eslint --fix ./src --ext .vue,.ts",
     "prettier": "prettier --write \"./src/**/*.{vue,ts,scss}\"",
     "stylelint": "stylelint --fix \"./src/**/*.scss\"",
     "lint:css:js": "npm run eslint && npm run prettier && npm run stylelint"

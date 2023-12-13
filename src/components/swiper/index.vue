@@ -1,5 +1,8 @@
 <template>
-  <div class="ui-slideshow-wrapper ui-lazyLoad-pic" :style="{ height: itemHeight }">
+  <div
+    class="ui-slideshow-wrapper ui-lazyLoad-pic"
+    :style="{ height: itemHeight }"
+  >
     <div
       ref="bannerEle"
       class="ui-slideshow"
@@ -7,7 +10,10 @@
       @touchmove="touchmove"
       @touchend="touchend"
     >
-      <slot name="banner" :list="bannerList" />
+      <slot
+        name="banner"
+        :list="bannerList"
+      />
     </div>
     <slot name="dot" />
   </div>

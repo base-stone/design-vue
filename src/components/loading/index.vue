@@ -1,5 +1,8 @@
 <template>
-  <div class="ui-showLoading" @touchmove="handleStopPopup($event)">
+  <div
+    class="ui-showLoading"
+    @touchmove="handleStopPopup($event)"
+  >
     <div class="ui-showLoading-cont">
       <div class="ui-showLoading-icon">
         <span class="bar1" />
@@ -15,7 +18,9 @@
         <span class="bar11" />
         <span class="bar12" />
       </div>
-      <p class="cfff">正在加载中</p>
+      <p class="cfff">
+        正在加载中
+      </p>
     </div>
   </div>
 </template>
