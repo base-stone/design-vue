@@ -28,10 +28,7 @@ const showModal = ({
     }
 
     const removeEl = () => {
-      const parentEl = container.parentNode
-      if (parentEl) {
-        parentEl.removeChild(container)
-      }
+      container.remove()
       isClick = true
       vm = null
     }

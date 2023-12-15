@@ -7,6 +7,7 @@
 <script lang="ts">
 import { defineComponent, onBeforeUnmount, onMounted } from 'vue'
 import { getFontSize, getPassiveValue, throttle } from '@base-stone/librarys'
+
 export default defineComponent({
   props: {
     finished: {

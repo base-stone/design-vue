@@ -18,10 +18,7 @@ const showLoading = () => {
 
 const hideLoading = () => {
   if (vm && !isLoading) {
-    const parentEl = container.parentNode
-    if (parentEl) {
-      parentEl.removeChild(container)
-    }
+    container.remove()
     isLoading = true
   }
 }

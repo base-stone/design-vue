@@ -17,9 +17,7 @@ const showToast = (text: string, time: number = 2000) => {
   document.body.appendChild(container)
   setTimeout(() => {
     if (vm) {
-      if (container.parentNode) {
-        container.parentNode.removeChild(container)
-      }
+      container.remove()
       isClick = true
       vm = null
     }
