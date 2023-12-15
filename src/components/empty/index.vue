@@ -1,7 +1,6 @@
 <template>
   <div class="ui-empty flex-column flex-v-center flex-h-center">
-    <div v-if="image" class="ui-empty-pic" :style="{ backgroundImage: `url(${image})` }" />
-    <div v-else class="ui-empty-pic" />
+	  <div class="ui-empty-pic" :style="{ backgroundImage: image ? `url(${image})` : 'none' }"></div>
     <span class="lh44">{{ title }}</span>
   </div>
 </template>
