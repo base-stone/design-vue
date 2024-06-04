@@ -1,4 +1,4 @@
-pnpm install -D @base-stone/vue
+pnpm add -D @base-stone/vue
 https://unpkg.com/@base-stone/vue
 
 
