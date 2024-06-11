@@ -1,4 +1,5 @@
 import { createVNode, render } from 'vue'
+// @ts-ignore
 import Modal from './index.vue'
 let vm: any = null
 let isClick = true

@@ -1,4 +1,4 @@
-import { getPassiveValue, throttle } from '@base-stone/librarys'
+import { getPassiveValue, throttle } from '@base-stone/utils'
 
 const lazyLoad = {
   scrollFn: function () {} as (event: Event) => void,
