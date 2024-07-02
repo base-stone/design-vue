@@ -1,4 +1,5 @@
 import { createVNode, render } from 'vue'
+// @ts-ignore
 import Loading from './index.vue'
 
 let vm: any = null

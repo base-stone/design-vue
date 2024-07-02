@@ -16,7 +16,8 @@
           :style="{ background: confirmColor }"
           :class="{ 'confirm-row': !cancelButton }"
           @click="successCallback"
-        >{{ confirmText }}</strong>
+          >{{ confirmText }}</strong
+        >
       </div>
     </div>
   </div>

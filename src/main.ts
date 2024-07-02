@@ -1,10 +1,10 @@
-import { showLoading, hideLoading } from './components/loading'
-import showToast from './components/toast'
-import showModal from './components/modal'
-import PageLoading from './components/page-loading'
-import Empty from './components/empty'
-import Overlay from './components/overlay'
-import ScrollList from './components/scroll-list'
+import { showLoading, hideLoading } from './components/loading/index'
+import showToast from './components/toast/index'
+import showModal from './components/modal/index'
+import PageLoading from './components/page-loading/index'
+import Empty from './components/empty/index'
+import Overlay from './components/overlay/index'
+import ScrollList from './components/scroll-list/index'
 import lazyLoad from './directives/lazyLoad'
 
 export {
