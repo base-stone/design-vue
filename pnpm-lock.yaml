@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@base-stone/style':
-        specifier: ^0.1.9
-        version: 0.1.9
+        specifier: ^0.2.0
+        version: 0.2.0
       '@base-stone/utils':
         specifier: ^0.1.3
         version: 0.1.3
@@ -134,8 +134,8 @@ packages:
     resolution: {integrity: sha512-XEFXSlxiG5td2EJRe8vOmRbaXVgfcBlszKujvVmWIK/UpywWljQCfzAv3RQCGujWQ1RD4YYWEAqDXfuJiy8f5Q==}
     engines: {node: '>=6.9.0'}
 
-  '@base-stone/style@0.1.9':
-    resolution: {integrity: sha512-oZus/Z0Q9HaR1E27pLtvWGrhun0jcGmGOzOpa7sNncgM4oMgAtgPPNQbzqgOy+7qbwPUO9eei+PH2ynS7RU5/w==}
+  '@base-stone/style@0.2.0':
+    resolution: {integrity: sha512-wHfH7z+WBSYMG27PwVyLQSH9CPBkRvpw7R9mpJS4maPAvUjZnu4vnWxtA9b7s5i2TQUt95RI1grK+JmrOKtkHQ==}
 
   '@base-stone/utils@0.1.3':
     resolution: {integrity: sha512-K/fEtjc5oEtTwrhvAfCfwdB1IUNVdg8r34LblKu4ds/JJgvgeMgdMnJr0fnTBiRycMHioeWahlTV+pHcJ3D8pA==}
@@ -2394,7 +2394,7 @@ snapshots:
       '@babel/helper-validator-identifier': 7.24.7
       to-fast-properties: 2.0.0
 
-  '@base-stone/style@0.1.9': {}
+  '@base-stone/style@0.2.0': {}
 
   '@base-stone/utils@0.1.3': {}
 
