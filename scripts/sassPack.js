@@ -2,7 +2,7 @@ import fs from 'fs'
 import * as sass from 'sass'
 import postcss from 'postcss'
 import pxtorem from 'postcss-pxtorem'
-import packageJson from '../package.json' assert { type: 'json' }
+import packageJson from '../package.json' with { type: 'json' }
 
 const comment =
   '/*!\n' +

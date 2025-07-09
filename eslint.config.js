@@ -6,7 +6,7 @@ import eslintPluginImport from 'eslint-plugin-import'
 
 export default [
   {
-    ignores: ['dist', 'eslint.config.js', 'vite.config.ts']
+    ignores: ['dist', 'eslint.config.js', 'vite.config.ts', 'scripts/sassPack.js']
   },
   {
     files: ['**/*.ts', '**/*.vue'],
